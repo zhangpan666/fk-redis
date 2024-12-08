@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.light</groupId>
-    <artifactId>light-redis</artifactId>
+    <artifactId>fk-redis</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>light-redis</name>
+    <name>fk-redis</name>
     <packaging>jar</packaging>
-    <description>project for light redis</description>
+    <description>project for fk redis</description>
 
 
     <properties>
@@ -66,6 +66,11 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>2.0.43</version>
+        </dependency>
     </dependencies>
 
     <repositories>
@@ -95,7 +100,7 @@
     </distributionManagement>
 
     <build>
-        <finalName>light-redis</finalName>
+        <finalName>fk-redis</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

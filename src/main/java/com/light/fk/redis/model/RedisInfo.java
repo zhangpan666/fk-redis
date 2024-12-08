@@ -1,4 +1,4 @@
-package com.light.redis.model;
+package com.light.fk.redis.model;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
