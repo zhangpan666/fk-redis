@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a954e1a6-de7f-44d2-8174-0aa9751e8ad3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../commoner-lottery/src/main/java/com/commoner/gallery/rabbitmq/RabbitFanoutExchangeReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../commoner-lottery/src/main/java/com/commoner/gallery/rabbitmq/RabbitMqContants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../commoner-lottery/src/main/java/com/commoner/gallery/rabbitmq/message/LotteryMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../commoner-lottery/src/main/java/com/commoner/gallery/util/JsonOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../commoner-lottery/src/main/java/com/commoner/gallery/util/MessageEnums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/admin/controller/AdminSystemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/admin/pojo/AdminPermissionVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/admin/service/impl/AdminSystemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/api/aa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/aop/annotation/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/aop/annotation/RedisCacheClear.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/mapper/HostAllowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/mapper/MenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/mapper/OperationRecordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/mapper/PermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/mapper/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/mapper/UserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/model/HostAllow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/model/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/model/OperationRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/model/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/model/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/service/HostAllowService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/service/OperationRecordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/service/impl/HostAllowServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/service/impl/OperationRecordServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/service/impl/PermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/task/StartRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/util/CodeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/util/MenuUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/util/threadpool/CustomExecutors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/util/threadpool/CustomThreadFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/common/util/threadpool/ThreadPoolUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/jpush/JpushCountResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/jpush/JpushParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/jpush/JpushResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/jpush/JpushUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/umeng/AndroidNotification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/umeng/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/umeng/BasePushResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/umeng/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/umeng/IOSNotification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/umeng/PushClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/umeng/PushResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/umeng/PushStatusResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/umeng/UmengNotification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/umeng/android/AndroidBroadcast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/umeng/android/AndroidCustomizedcast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/umeng/android/AndroidFilecast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/umeng/android/AndroidGroupcast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/umeng/android/AndroidUnicast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/umeng/ios/IOSBroadcast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/umeng/ios/IOSCustomizedcast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/umeng/ios/IOSFilecast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/umeng/ios/IOSGroupcast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/push/umeng/ios/IOSUnicast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/sms/SendDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/sms/SmsSendResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/java/com/gallery/manage/sms/SmsSendUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/application-common1.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/application-manage.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/application-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/mapper/HostAllowMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/mapper/MenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/mapper/OperationRecordMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/mapper/PermissionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/mapper/UserRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/margin-gallery-clone.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/margin-gallery-start.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/shutdown.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/startup.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/images/810.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/images/background1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/js/bodyTab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/json/address.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/json/images.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/json/linkList.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/json/linkLogo.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/json/logs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/json/menu.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/json/navs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/json/newsImg.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/json/newsList.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/json/systemParameter.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/json/userGrade.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/json/userList.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/json/userface.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/layui/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/mobile2/images/组 4 拷贝@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/mobile2/images/组 4@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/mobile2/images/组 5@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/doc/addressDoc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/doc/bodyTabDoc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/doc/navDoc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/img/images.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/img/images.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/login/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/login/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/news/newsAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/news/newsAdd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/news/newsList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/news/newsList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/systemSetting/basicParameter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/systemSetting/basicParameter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/systemSetting/icons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/systemSetting/icons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/systemSetting/linkList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/systemSetting/linkList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/systemSetting/linksAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/systemSetting/logs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/systemSetting/logs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/user/changePwd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/user/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/user/userAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/user/userAdd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/user/userGrade.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/user/userInfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/user/userInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/user/userList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery-manage/src/main/resources/static/page/user/userList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-config/src/main/java/com/light/config/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-config/src/main/java/com/light/config/config/RestTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-config/src/main/java/com/light/config/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-config/src/main/java/com/light/config/converter/StringToDateConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-config/src/main/java/com/light/config/util/ApplicationContextUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-config/src/main/java/com/light/config/util/PropertiesUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/RSA/Base64.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/RSA/GenKeyPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/RSA/RSAEncrypt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/authenticator/GoogleAuthenticator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/authenticator/QRCodeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/authenticator/TOTP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/enums/DateFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/enums/ResultEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/model/CommonConstantInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/model/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/model/Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/model/TempFileInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/qrcode/BufferedImageLuminanceSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/qrcode/QRCodeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/BaseConstantClassUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/CalendarUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/CookieUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/EncryptAESUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/ExcelReadUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/ExcelWriteUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/FileUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/FtpUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/JdbcUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/MD5Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/PageUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/PinYinUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/RandomUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/SecuritySHA1Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/SensitiveWordUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/SerializeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/StringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/XMLUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/scanner/ClassScannerUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/scanner/FileScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/scanner/JarScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/scanner/Scan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/scanner/ScanExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-core/src/main/java/com/light/core/util/scanner/ScanningFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-parent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-rabbitmq/src/main/java/com/light/rabbitmq/callback/RabbitConfirmCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-rabbitmq/src/main/java/com/light/rabbitmq/callback/RabbitReturnCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/light/redis/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/light/redis/config/RedisPropertiesFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/light/redis/model/RedisInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/light/redis/util/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-shiro/src/main/java/com/light/shiro/config/ByteSourceUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-shiro/src/main/java/com/light/shiro/config/CustomSimpleByteSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-shiro/src/main/java/com/light/shiro/config/CustomWebSessionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-shiro/src/main/java/com/light/shiro/config/RedisCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-shiro/src/main/java/com/light/shiro/config/RedisCacheManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-shiro/src/main/java/com/light/shiro/config/RedisSessionDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-shiro/src/main/java/com/light/shiro/config/ShiroConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-shiro/src/main/java/com/light/shiro/constants/ShiroConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../light-shiro/src/main/java/com/light/shiro/util/ShiroUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../commoner-gallery" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/light/redis/config/RedisConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/light/redis/config/RedisPropertiesFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/light/redis/model/RedisInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/light/redis/util/RedisUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../margin-gallery1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../new" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-test/client-four/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-test/client-four/src/main/java/com/example/clientthree/ClientFourApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-test/client-four/src/main/java/com/example/clientthree/core/netty/NettyServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-test/client-four/src/main/java/com/example/clientthree/service/FeignTestService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-test/client-four/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-test/client-four/src/test/java/com/example/clienttwo/ClientTwoApplicationTests.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/light/redis/config/RedisConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="35" column="87" selection-start-line="35" selection-start-column="87" selection-end-line="35" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/light/redis/util/RedisUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/light/redis/config/RedisPropertiesFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>nexus.url</find>
+      <find>java.version</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/model/RedisInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/light/redis/config/RedisConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/light/redis/util/RedisUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/light/redis/model/RedisInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/light/redis/config/RedisPropertiesFactory.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="mavenHome" value="/usr/local/maven" />
+        <option name="userSettingsFile" value="/usr/local/maven/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="light-redis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="light-redis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="16" />
+    <option name="y" value="23" />
+    <option name="width" value="1560" />
+    <option name="height" value="973" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="light-redis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="light-redis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="light-redis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="light-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="light-redis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="light-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="light-redis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="light-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="light-redis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="light-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="light-redis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="light-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="light-redis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="light-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.light.redis.config" />
+      <recent name="com.light.redis.util" />
+      <recent name="model" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a954e1a6-de7f-44d2-8174-0aa9751e8ad3" name="Default Changelist" comment="" />
+      <created>1595215221547</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595215221547</updated>
+      <workItem from="1595215223551" duration="4192000" />
+      <workItem from="1595221774666" duration="5584000" />
+      <workItem from="1595573448045" duration="1161000" />
+      <workItem from="1595586760042" duration="5000" />
+      <workItem from="1595931170401" duration="179000" />
+      <workItem from="1596128713231" duration="604000" />
+      <workItem from="1596646302663" duration="296000" />
+      <workItem from="1597475721042" duration="58000" />
+      <workItem from="1597486003103" duration="2445000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14524000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="16" y="23" width="1560" height="973" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21212122" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45629966" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.23723042" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Problems" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.35177866" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/light/redis/aa.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.11.RELEASE/spring-data-redis-2.1.11.RELEASE-sources.jar!/org/springframework/data/redis/connection/RedisConnectionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/light/light-core/1.0-SNAPSHOT/light-core-1.0-20200720.031708-5.jar!/com/light/core/util/PropertiesUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/com/light/light-core/1.0-SNAPSHOT/light-core-1.0-SNAPSHOT.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/com/light/light-parent/1.0-SNAPSHOT/light-parent-1.0-SNAPSHOT.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1898">
+          <caret line="384" column="8" selection-start-line="384" selection-start-column="8" selection-end-line="384" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/light/redis/model/RedisInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="33" column="68" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/light/redis/util/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/light/redis/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="35" column="87" selection-start-line="35" selection-start-column="87" selection-end-line="35" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/light/redis/config/RedisPropertiesFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>light-redis</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
